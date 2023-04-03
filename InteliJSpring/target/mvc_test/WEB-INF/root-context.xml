@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--<bean id="vo1" class="vo.PersonVO">
+        &lt;!&ndash;<constructor-arg value="홍길동" />
+        <constructor-arg value="010-222-3333" />
+        <constructor-arg value="20" />&ndash;&gt;
+        <property name="name" value="홍길동"/>
+    </bean>-->
+
+    <!--<bean id="dao" class="dao.BoardDAOImpl">
+
+    </bean>
+
+    <bean id="boardService" class="service.BoardServiceImpl">
+        <constructor-arg ref="dao"/>
+    </bean>-->
+    <bean id="personDAO" class="dao.PersonDAO">
+
+    </bean>
+</beans>
