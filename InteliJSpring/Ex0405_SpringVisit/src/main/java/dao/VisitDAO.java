@@ -10,7 +10,8 @@ public class VisitDAO {
 
     public VisitDAO(SqlSession sqlSession) {
         this.sqlSession = sqlSession;
-    } // end of class
+        System.out.println("dao 생성자");
+    } // end of constructor
 
     public List<VisitVO> selectList(){
         List<VisitVO> visit_list = sqlSession.selectList("v.visit_list");
