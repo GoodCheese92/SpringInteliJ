@@ -1,14 +1,15 @@
 package dao;
 
 import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.SqlSessionTemplate;
 import vo.VisitVO;
 
 import java.util.List;
 
 public class VisitDAO {
-    SqlSession sqlSession;
+    SqlSessionTemplate sqlSession;
 
-    public void setSqlSession(SqlSession sqlSession) {
+    public void setSqlSession(SqlSessionTemplate sqlSession) {
         this.sqlSession = sqlSession;
     }
 

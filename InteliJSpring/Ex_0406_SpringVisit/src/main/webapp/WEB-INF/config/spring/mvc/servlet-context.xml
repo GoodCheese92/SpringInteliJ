@@ -20,7 +20,7 @@
     </beans:bean>-->
 
     <beans:bean class="com.korea.visit.VisitController">
-        <beans:constructor-arg ref="visit_daoBean" />
+        <beans:constructor-arg ref="" />
     </beans:bean>
 
 </beans:beans>

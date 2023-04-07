@@ -28,7 +28,7 @@
 	 <!--<context:component-scan base-package="com.korea.visit" />-->
 
 	<!-- 컨트롤러 수동생성 및 dao를 setter 주입으로 받는다. -->
-	<beans:bean class="com.korea.visit.VisitController">
+	<beans:bean class="controller.VisitController">
 		<beans:constructor-arg ref="visit_daoBean" />
 	</beans:bean>
 
