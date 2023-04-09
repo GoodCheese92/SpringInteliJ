@@ -14,12 +14,12 @@ public class VisitDAO {
     @Autowired
     public VisitDAO(SqlSessionTemplate sqlSession) {
         this.sqlSession = sqlSession;
+        System.out.println("sqlSession 생성자 : " + sqlSession);
     } // end of constructor
 
-    public List<VisitVO> selectList(){
-        List<VisitVO> list = sqlSession.selectList("v.visit_list");
+    public List<VisitVO> selectList() {
+        List<VisitVO> list = sqlSession.selectList("VisitMapper.visit_list2");
         return list;
     } // end of selectList()
-
 
 } // end of class

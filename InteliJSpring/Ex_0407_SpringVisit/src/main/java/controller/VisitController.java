@@ -17,6 +17,7 @@ public class VisitController {
     @Autowired
     public VisitController(TotalService service) {
         this.service = service;
+        System.out.println("service 생성자 : " + service);
     } // end of constructor
 
     @RequestMapping(value = {"/", "/visit_list.do"})

@@ -14,6 +14,7 @@ public class TotalService {
     @Autowired
     public TotalService(VisitDAO visitDAO) {
         this.visitDAO = visitDAO;
+        System.out.println("visitDAO 생성자 : " + visitDAO);
     } // end of constructor
 
     public List<VisitVO> selectList(){
